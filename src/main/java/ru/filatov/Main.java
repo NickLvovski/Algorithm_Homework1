@@ -10,8 +10,8 @@ public class Main {
         int max = 0;
         int number;
 
-        for (int i = 0; i < random.nextInt(10, 1000); i++){
-            number = random.nextInt(0, 1000);
+        for (int i = 0; i < random.nextInt(999, 100000); i++){
+            number = random.nextInt(0, 1000000);
             if (number < min) min = number;
             if (number > max) max = number;
             queue.push(new Item(number));
