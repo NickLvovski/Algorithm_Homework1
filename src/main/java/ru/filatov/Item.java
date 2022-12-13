@@ -1,15 +1,18 @@
 package ru.filatov;
 
 public class Item {
+    // значение элементы в очереди
     public int value;
+    // указатель на следующий элемент в очереди
     public Item next;
 
-    public Item(int value, Item next){
-        this.value = value;
-        this.next = next;
+    public Item(int value, Item next){ //2
+        this.value = value; //1
+        this.next = next; //1
     }
 
-    public Item(int value){
+    public Item(int value) //2
+    {
         this(value, null);
     }
 }
