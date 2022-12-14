@@ -20,7 +20,7 @@ public class Main {
             int max = 0;
             int number;
             for (int j = 0; j < elements[i]; j++){
-                number = random.nextInt(0, 1000000);
+                number = random.nextInt(0, 1000);
                 if (number < min) min = number;
                 if (number > max) max = number;
                 queue.push(new Item(number));

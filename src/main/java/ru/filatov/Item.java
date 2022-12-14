@@ -1,7 +1,7 @@
 package ru.filatov;
 
 public class Item {
-    // значение элементы в очереди
+    // значение элемента в очереди
     public int value;
     // указатель на следующий элемент в очереди
     public Item next;

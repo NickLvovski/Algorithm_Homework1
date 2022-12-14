@@ -8,7 +8,7 @@ public class Queue{
 
     public Queue() { }
 
-    public void push(Item value){ //10
+    public void push(Item value){ //1+(3+1)+2+1+2=10
         N_op++;
         N_op += 3;
         if(head == null && tail == null){ //3
@@ -22,7 +22,7 @@ public class Queue{
         tail.next = null; N_op+=2; //2
     }
 
-    public Item pop() throws Exception{ //6
+    public Item pop() throws Exception{ //1+1+1+1+2=6
         N_op++;
         if (head == null){ //1
             throw new Exception("The queue is empty");
@@ -37,7 +37,7 @@ public class Queue{
         return result;
     }
 
-    public int get(int index) throws Exception{ //7 + 35n
+    public int get(int index) throws Exception{ //1+1+2+18n+2+1+17n=7+35n
         Item oldHead = head; N_op++;//1
         N_op+=2;
         for(int i = 0; i < index; i++){ //2 + 18*n
@@ -54,10 +54,10 @@ public class Queue{
         return result;
     }
 
-    public void set(int index, int value) throws Exception{ //8 + 35n
+    public void set(int index, int value) throws Exception{ //2+1+2+18n+2+1+17n=8+35n
         Item oldHead = head; N_op++;//1
         N_op+=2;
-        for(int i = 0; i < index; i++){ //2 + 18 * n
+        for(int i = 0; i < index; i++){ //18*n
             N_op+=2;
             push(pop()); //18
         }
