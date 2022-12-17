@@ -2,7 +2,7 @@ package ru.filatov;
 
 public class CountingSort {
     public static Queue sort(Queue queue, int min, int max) throws Exception{ //3+4+2+2+8+5+14n+3n*18k
-        //F(n)=3+4+2+2+8+5+sum(5+8+1)(i=1;i=n)+sum(3+sum(2+16)(i=1;i=k))(i=1;i=n) =
+        //F(n)=3+4+2+2+8+5+sum(5+8+1)(i=1;i=n)+sum(3+sum(2+16)[i=1;i=k])[i=1;i=n] =
         //=24+14n+3n+18nk=24+17n+18nk
         //O(F(n))=nk
         // Инициализация массива подсчета
